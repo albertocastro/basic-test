@@ -5,7 +5,7 @@ Create a **function** that returns the conversion of a number from a numeric sys
 
 ## Requeriments
 
-Implement at least 10 of the following conversions
+Implement at least 5 of the following conversions
 https://www.mathsisfun.com/metric-imperial-conversion-charts.html
 
 ## Usage
@@ -14,8 +14,24 @@ https://www.mathsisfun.com/metric-imperial-conversion-charts.html
 
 Input | Output
 ----- | ------
-"2kg to miles" | "1.24274miles"
+"2km to miles" | "1.24274miles"
 "400lb to kg" | "181.437kb"
-"300oz to m | "Conversion not possible
+"300oz to m" | "Conversion not possible"
+
+```javascript
+const myConversionFunction = (myText) => {
+  
+  // Logic
+
+  return result;
+}
+
+
+console.log(myConversionFunction("2km to miles"))   //  "1.24274miles"
+console.log(myConversionFunction("400lb to kg"))   //  "181.437kb"
+console.log(myConversionFunction("300oz to m"))   //   "Conversion not possible
+
+```
+
 
 Happy Programming!
