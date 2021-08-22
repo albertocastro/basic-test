@@ -1,50 +1,34 @@
 //Create a function to get the result from km to miles.
 
-// let km = 100
-// const miles = 0.62
  function fromKmToMiles(km){
     const miles = 0.62
     return km * miles
 
 }
-//console.log(fromKmToMiles(10))
 
-// let lbs = 300
-
-
-
+//Create a function to get the result from lb to kg
 function fromLbsToKg(lbs){
     const kg = 0.42
     return lbs * kg
 
 }
-//console.log(fromLbsToKg(300));
-
-//"11km to mi"
-//"300lbs to kgs"
-
-
-
+//Create a function where we execute one of our previous functions by expecting a request.
 function init(query){
-    //["400lbs", "to", "kgs"]
+    
 
-    let result = query.split(" ")
-    //"400lbs"
+    let result = query.split(" ")    //We cut the query on the specific info we want/need
     let numberAndUnit = result[0]
-
     let numericPartLength = numberAndUnit.length - 2
     let onlyNumbers = numberAndUnit.substring(0, numericPartLength)
-    //parseInt(onlyNumbers
+    
     let valueNumber = parseInt(onlyNumbers)
-
-    // console.log(onlyNumbers)
-    // console.log(query.length)
-    // console.log(numericPartLength)
+console.log(onlyNumbers)
+   
 
    let intention = query.substring(numericPartLength,query.length)
    
     let finalResult = null
-    switch(intention) {
+    switch(intention) {   //We use our query to go by the options/case we have in our switch to see which one works or default.
         case "km to mi":
      finalResult = fromKmToMiles(valueNumber) + "mi"
         break;
@@ -56,11 +40,5 @@ function init(query){
     }
     return finalResult
 }
-const convertionFinalResult = init("500lb to kg")
+const convertionFinalResult = init("10lb to kg")
 console.log(convertionFinalResult)
-//init("100km to mi")
-//console.log(init("400lb to kg"))
-//"xxU1 to U2"
-//100km
-//100000000000000000km
-
